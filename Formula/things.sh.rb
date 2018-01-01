@@ -6,6 +6,7 @@ class ThingsSh < Formula
 
   def install
     bin.install "things.sh"
+    bash_completion.install "bash_completion/things.sh"
   end
 
   test do

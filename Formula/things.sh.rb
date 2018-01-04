@@ -13,4 +13,10 @@ class ThingsSh < Formula
   test do
     system "true" # nothing really to test here
   end
+
+  bottle do
+    root_url "https://github.com/AlexanderWillner/things.sh/releases/download/2.0/"
+    cellar :any_skip_relocation
+    sha256 "5327d6b9c93e1959817a6b8a0b309dfdce2359949d310c60b56067207c720709" => :high_sierra
+  ends
 end

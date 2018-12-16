@@ -1,19 +1,18 @@
 class ThingsSh < Formula
   desc "Simple read-only comand-line interface to your Things 3 database"
   homepage "https://github.com/AlexanderWillner/things.sh"
-  url "https://github.com/AlexanderWillner/things.sh/archive/2.3.tar.gz"
-  sha256 "d5065057c66eb71182e66038e9cb90b21a0061d1c0c0e0f0e06c4193671b5e52"
+  url "https://github.com/AlexanderWillner/things.sh/archive/2.6.tar.gz"
+  sha256 "a001074680e938167389c166d85310d14990be1d8b2a35708983ac064b569e20"
 
   bottle do
-    root_url "https://github.com/AlexanderWillner/things.sh/releases/download/2.3"
+    root_url "https://github.com/AlexanderWillner/things.sh/releases/download/2.6"
     cellar :any_skip_relocation
-    sha256 "5c6fe90ff7534dc11b79d9504d445d1db50cbde6fe065e9530493d23e777108f" => :high_sierra
+    sha256 "97f42913781976e7ccfabb5feb17b8f98b0cf0ddb129d4e7ac50f1ca02fbff73" => :mojave
   end
 
   def install
     bin.install "things.sh"
     bin.install "plugins"
-    bin.install "ThingsURLHelper.app"
     bash_completion.install "things.bashcompletion.sh"
   end
 

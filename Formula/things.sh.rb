@@ -1,13 +1,13 @@
 class ThingsSh < Formula
   desc "Simple read-only comand-line interface to your Things 3 database"
   homepage "https://github.com/AlexanderWillner/things.sh"
-  url "https://github.com/AlexanderWillner/things.sh/archive/2.7.tar.gz"
-  sha256 "049265d0d506e4fa2e2304b7f24390a4320c2ad033c3c5b4a617a0442f459c60"
- 
+  url "https://github.com/AlexanderWillner/things.sh/archive/2.8.tar.gz"
+  sha256 "d5688806a15883c552ad3c96051d572923f0b145401d32e8df37fec1caf8cafb"
+
   bottle do
-    root_url "https://github.com/AlexanderWillner/things.sh/releases/download/2.7"
+    root_url "https://github.com/AlexanderWillner/things.sh/releases/download/2.8"
     cellar :any_skip_relocation
-    sha256 "d2f4c1039a397b15741f49bc4db49d06c7a383b915a6c56d6c2852fc4e7a8851" => :mojave
+    sha256 "a97c81f2f11c368fee9cd75f2c4e438f4eaaae0a3f3f562c21b48c4fc7956f35" => :mojave
   end
 
   def install

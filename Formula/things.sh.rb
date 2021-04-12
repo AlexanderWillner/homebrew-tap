@@ -6,8 +6,7 @@ class ThingsSh < Formula
 
   bottle do
     root_url "https://github.com/AlexanderWillner/things.sh/releases/download/2.10"
-    cellar :any_skip_relocation
-    sha256 "197ba0f384d41ce7ae3802901c494e2d67ae7ef20ddc3f4b47f3b83816f67e75" => :mojave
+    sha256 cellar: :any_skip_relocation, mojave: "197ba0f384d41ce7ae3802901c494e2d67ae7ef20ddc3f4b47f3b83816f67e75"
   end
 
   def install
